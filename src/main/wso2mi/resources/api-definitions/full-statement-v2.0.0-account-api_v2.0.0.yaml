@@ -1,0 +1,16 @@
+openapi: 3.0.1
+info:
+  title: full-statement-v2.0.0-account-api
+  description: API Definition of full-statement-v2.0.0-account-api
+  version: 2.0.0
+servers:
+- url: "http://localhost:8290/accounts/full-statements/2.0.0/{AccountId}?NumberOfRows={NumberOfRows}&RequestedPage={RequestedPage}&TotalPages=\
+    \ {TotalPages}&FromDate={FromDate}&ToDate={ToDate}&DebitorAccountCurrency={Currency}&CustomerNo={CustomerNo}\
+    \ &DebitorUserName={DebitorUserName}&DebitorAccountProductId={DebitorAccountProductId}&DebitorAccountHostBranchCode=\
+    \ {DebitorAccountHostBranchCode}"
+paths:
+  /:
+    get:
+      responses:
+        default:
+          description: Default response
